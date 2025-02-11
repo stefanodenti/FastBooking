@@ -1,7 +1,8 @@
 import { Book, FileText } from "lucide-react";
 import { useState } from "react";
 import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
+
 import readmeContent from "../../README.md?raw";
 import subscriptionContent from "../../SUBSCRIPTION_PLANS.md?raw";
 import technicalContent from "../../TECHNICAL.md?raw";
@@ -69,7 +70,7 @@ function NavButtons({ activeDoc, setActiveDoc }) {
 function Content({ content }) {
   return (
     <div className="prose dark:prose-invert max-w-none">
-      <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
+      <ReactMarkdown rehypePlugins={[rehypeRaw]}>{content}</ReactMarkdown>
     </div>
   );
 }
