@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fc-custom-styles {
+  --fc-border-color: theme('colors.gray.200');
+  --fc-button-text-color: theme('colors.gray.700');
+  --fc-button-bg-color: theme('colors.white');
+  --fc-button-border-color: theme('colors.gray.300');
+  --fc-button-hover-bg-color: theme('colors.gray.100');
+  --fc-button-hover-border-color: theme('colors.gray.400');
+  --fc-button-active-bg-color: theme('colors.blue.600');
+  --fc-button-active-border-color: theme('colors.blue.700');
+  --fc-event-bg-color: theme('colors.blue.600');
+  --fc-event-border-color: theme('colors.blue.700');
+  --fc-event-text-color: theme('colors.white');
+  --fc-today-bg-color: theme('colors.blue.50');
+}
+
+.dark .fc-custom-styles {
+  --fc-border-color: theme('colors.gray.700');
+  --fc-button-text-color: theme('colors.gray.300');
+  --fc-button-bg-color: theme('colors.gray.800');
+  --fc-button-border-color: theme('colors.gray.600');
+  --fc-button-hover-bg-color: theme('colors.gray.700');
+  --fc-button-hover-border-color: theme('colors.gray.500');
+  --fc-button-active-bg-color: theme('colors.blue.600');
+  --fc-button-active-border-color: theme('colors.blue.700');
+  --fc-event-bg-color: theme('colors.blue.600');
+  --fc-event-border-color: theme('colors.blue.700');
+  --fc-event-text-color: theme('colors.white');
+  --fc-today-bg-color: theme('colors.blue.900/50');
+  --fc-page-bg-color: theme('colors.gray.800');
+  --fc-neutral-bg-color: theme('colors.gray.800');
+  --fc-neutral-text-color: theme('colors.gray.300');
+  --fc-list-event-hover-bg-color: theme('colors.gray.700');
+  --fc-more-link-bg-color: theme('colors.gray.700');
+  --fc-more-link-text-color: theme('colors.gray.300');
+  --fc-non-business-color: theme('colors.gray.900/50');
+  --fc-highlight-color: theme('colors.blue.900/30');
+}
+
+.fc .fc-button {
+  @apply font-medium text-sm px-4 py-2 rounded-lg transition-colors;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active,
+.fc .fc-button-primary:not(:disabled):active {
+  @apply text-white;
+}
+
+.fc .fc-toolbar-title {
+  @apply text-lg font-semibold;
+}
+
+.fc .fc-daygrid-day-number {
+  @apply text-sm;
+}
+
+.fc .fc-event {
+  @apply cursor-pointer transition-opacity hover:opacity-90;
+}
+
+.dark .fc-theme-standard td,
+.dark .fc-theme-standard th {
+  @apply border-gray-700;
+}
+
+.dark .fc-theme-standard .fc-scrollgrid {
+  @apply border-gray-700;
+}
+
+.dark .fc .fc-cell-shaded,
+.dark .fc .fc-day-disabled {
+  @apply bg-gray-800;
+}
+
+/* Additional dark mode optimizations */
+.dark .fc {
+  color: theme('colors.gray.300');
+}
+
+.dark .fc .fc-daygrid-day-number {
+  @apply text-gray-300;
+}
+
+.dark .fc .fc-col-header-cell-cushion {
+  @apply text-gray-300;
+}
+
+.dark .fc .fc-list-day-cushion {
+  @apply bg-gray-800 text-gray-300;
+}
+
+.dark .fc .fc-list-event:hover td {
+  @apply bg-gray-700;
+}
+
+.dark .fc .fc-timegrid-slot-label {
+  @apply text-gray-400;
+}
+
+.dark .fc .fc-timegrid-axis {
+  @apply text-gray-400;
+}
+
+.dark .fc .fc-toolbar-title {
+  @apply text-gray-200;
+}
+
+.dark .fc .fc-more-link {
+  @apply text-blue-400;
+}
+
+.dark .fc .fc-daygrid-day.fc-day-today {
+  @apply bg-blue-900/30;
+}
+
+.dark .fc .fc-highlight {
+  @apply bg-blue-900/30;
+}
+
+.dark .fc .fc-event-title {
+  @apply text-white font-medium;
+}
+
+.dark .fc .fc-event-time {
+  @apply text-white font-medium;
+}
+
+.dark .fc-direction-ltr .fc-daygrid-event.fc-event-end {
+  @apply mr-1;
+}
+
+.dark .fc-direction-ltr .fc-daygrid-event.fc-event-start {
+  @apply ml-1;
+}

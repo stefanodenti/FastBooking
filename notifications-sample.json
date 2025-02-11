@@ -1,0 +1,139 @@
+{
+  "notifications": [
+    {
+      "userId": "YOUR_USER_ID",
+      "type": "profile_view",
+      "title": "Profile Viewed",
+      "message": "Someone from Italy viewed your profile through a shared link",
+      "read": false,
+      "createdAt": {
+        "_seconds": 1707609600,
+        "_nanoseconds": 0
+      },
+      "data": {
+        "linkId": "shared_link_1",
+        "viewerCountry": "Italy"
+      }
+    },
+    {
+      "userId": "YOUR_USER_ID",
+      "type": "appointment_reminder",
+      "title": "Upcoming Appointment",
+      "message": "You have a meeting with John Doe tomorrow at 10:00 AM",
+      "read": false,
+      "createdAt": {
+        "_seconds": 1707696000,
+        "_nanoseconds": 0
+      },
+      "data": {
+        "appointmentId": "appointment_123"
+      }
+    },
+    {
+      "userId": "YOUR_USER_ID",
+      "type": "profile_update",
+      "title": "Profile Updated",
+      "message": "Your profile information has been successfully updated",
+      "read": true,
+      "createdAt": {
+        "_seconds": 1707782400,
+        "_nanoseconds": 0
+      }
+    },
+    {
+      "userId": "YOUR_USER_ID",
+      "type": "profile_view",
+      "title": "Multiple Profile Views",
+      "message": "Your profile has been viewed 5 times in the last hour",
+      "read": false,
+      "createdAt": {
+        "_seconds": 1707868800,
+        "_nanoseconds": 0
+      },
+      "data": {
+        "linkId": "shared_link_2",
+        "viewCount": 5
+      }
+    },
+    {
+      "userId": "YOUR_USER_ID",
+      "type": "appointment_reminder",
+      "title": "Appointment Scheduled",
+      "message": "New appointment scheduled with Sarah Smith for next week",
+      "read": false,
+      "createdAt": {
+        "_seconds": 1707955200,
+        "_nanoseconds": 0
+      },
+      "data": {
+        "appointmentId": "appointment_456"
+      }
+    },
+    {
+      "userId": "YOUR_USER_ID",
+      "type": "profile_update",
+      "title": "Cover Image Updated",
+      "message": "Your profile cover image has been successfully updated",
+      "read": true,
+      "createdAt": {
+        "_seconds": 1708041600,
+        "_nanoseconds": 0
+      }
+    },
+    {
+      "userId": "YOUR_USER_ID",
+      "type": "profile_view",
+      "title": "International Profile View",
+      "message": "Your profile was viewed from Germany",
+      "read": false,
+      "createdAt": {
+        "_seconds": 1708128000,
+        "_nanoseconds": 0
+      },
+      "data": {
+        "linkId": "shared_link_3",
+        "viewerCountry": "Germany"
+      }
+    },
+    {
+      "userId": "YOUR_USER_ID",
+      "type": "appointment_reminder",
+      "title": "Appointment Cancelled",
+      "message": "Your appointment for tomorrow has been cancelled",
+      "read": false,
+      "createdAt": {
+        "_seconds": 1708214400,
+        "_nanoseconds": 0
+      },
+      "data": {
+        "appointmentId": "appointment_789"
+      }
+    },
+    {
+      "userId": "YOUR_USER_ID",
+      "type": "profile_update",
+      "title": "New File Uploaded",
+      "message": "A new file has been added to your profile attachments",
+      "read": true,
+      "createdAt": {
+        "_seconds": 1708300800,
+        "_nanoseconds": 0
+      }
+    },
+    {
+      "userId": "YOUR_USER_ID",
+      "type": "profile_view",
+      "title": "Shared Link Popular",
+      "message": "One of your shared links has received 10+ views today",
+      "read": false,
+      "createdAt": {
+        "_seconds": 1708387200,
+        "_nanoseconds": 0
+      },
+      "data": {
+        "linkId": "shared_link_4",
+        "viewCount": 12
+      }
+    }
+  ]
+}
