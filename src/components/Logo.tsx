@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
 
 interface LogoProps {
-  size?: "sm" | "md" | "lg";
+  size?: "xs" | "sm" | "md" | "lg";
 }
 
 export default function Logo({ size = "md" }: LogoProps) {
   const getSizeClasses = () => {
     switch (size) {
+      case "xs":
+        return "h-12";
       case "sm":
         return "h-20";
       case "lg":
